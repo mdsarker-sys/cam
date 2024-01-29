@@ -57,7 +57,9 @@
   color: #000;
   font-size: 1.1rem;
   font-weight: 400;
-  padding: 0.3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
   text-decoration: none;
   display: flex;
  text-align: center;
@@ -898,7 +900,8 @@ input {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #0057b315;
+  
 }
 
 
@@ -1179,9 +1182,9 @@ margin-bottom: 6rem;
     background-color: #f4f4f4; /* Light grey background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    padding: 40px; /* Spacious padding */
+    padding: 30px; /* Spacious padding */
     text-align: center; /* Center-align text */
-    width: 70%; /* Maximum width */
+    width: 80%; /* Maximum width */
     margin: 10px auto; /* Center in the parent with margin top and bottom */
   }
   
@@ -1196,6 +1199,7 @@ margin-bottom: 6rem;
     font-size: 1rem; /* Standard font size */
     line-height: 1.6; /* Spacious line height for readability */
     margin-bottom: 30px; /* Space above the button */
+    text-align: justify;
   }
   
   .apply-button {
@@ -1313,28 +1317,32 @@ margin-bottom: 6rem;
   }
 
   .testimonial-header{
-    font-size: clamp(0.8rem, 4vw + 1rem, 3.2rem); /* Adjust title size */
-    color: #585858; /* Default text color */
+    font-size: clamp(0.8rem, 5vw + 1rem, 3rem); /* Adjust title size */
+    color: #003d8297; /* Default text color */
     margin-bottom: 10px; /* Space below title */
-   
+    /* box-shadow: 0px 9px 10px 3px rgba(0, 0, 0, 0.06); */
     display: flex;
     padding: 1rem;
     justify-content: center;
     text-align: center;
     font-weight: 500;
+   border-radius: 0.3rem;
+   
    
   }
 
   .testimonial-header-container{
-    margin-bottom: 3rem;
-    
+   
+    margin-bottom: 1rem;
+    width: 100%;
+    font-weight: bolder;
     justify-content: center;
     text-align: center;
     margin-top: 3rem;
-    box-shadow: 0px 5px 8px 3px rgba(0, 0, 0, 0.05);
-    padding: 1rem 2rem 1rem  1rem;
-    border-radius: 0.5rem;
-    background-image: linear-gradient(to bottom, #4e6fa800, #2a507058);
+    
+    padding: 1rem 1rem 1rem  1rem;
+    border-radius: 0.3rem;
+    /* background-image: linear-gradient(to bottom, #1d468c59, #a7a7a700); */
   }
 
   .row{
@@ -1343,7 +1351,13 @@ margin-bottom: 6rem;
   
   }
 
-  .lead{
-    color: #3f3f3f9f;
-    font-size: 1rem;
+  .lead {
+    color: #00000093;
+    
+    font-size: clamp(0.3rem, 7vw + 1rem, 1rem) !important;
+    
+  
   }
+
+  
+ 
