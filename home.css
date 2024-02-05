@@ -339,6 +339,7 @@ input {
   .hero {
     font-family: 'Barlow', sans-serif;
     background: #000000;
+    
   }
   * {
     margin: 0;
@@ -813,262 +814,9 @@ input {
   
 
 
-
-
-
-/* Slides Section */
-
-
-.slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 90px;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  transition: z-index 1s ease;
-
-}
-.slide__header{
-  align-items: center;
-  padding-left: 8%;
-  padding-right: 8%;
-  
-
 }
 
 
-.slide__description {
-  font-family: 'Arial', sans-serif; /* Clean, professional font */
-  font-size: 1rem; /* Optimal size for readability */
-  line-height: 1.7; /* Improves readability */
-  color: #030202; /* Dark color for high contrast and easy reading */
-  margin: 0 auto; /* Centers the text block */
-  max-width: 700px; /* Optimal line length for reading */
-  padding-left: 5%; /* Adds space around the text */
-  opacity: 0.5; /* Light background to reduce eye strain */
-  border-left: 4px solid #0056b3; /* Adds a subtle branding element */
-  box-shadow: 0 3px 9px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-  text-align: justify; /* Ensures even alignment of text for a clean look */
-  padding: auto;
-  padding-right: 5%;
-  padding-left: 5%; 
-  padding-bottom: 5%;
-  padding-top: 5%;
-}
-
-
-
-/* Image Styling */
-.slide__figure {
-
-}
-
-
-
-/* Title Line */
-.title-line {
-  font-size: clamp(0.5rem, 4vw + 1rem, 3.3rem); /* Adjust title size */
-  color: #333; /* Default text color */
-  margin-bottom: 10px; /* Space below title */
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2rem;
- margin-top: 0rem;
- 
-}
-
-
-.brand-name {
-  color: red; /* Highlighted brand name color */
-  margin-right: 2rem;
-}
-
-/* Slide Description */
-
-/* Button Style */
-.btn {
-  padding: 10px 20px;
-  color: white;
-  margin-top: 2rem;
-  margin-left: 7rem;
-  text-decoration: none;
-  border-radius: 7px;
-  transition: background-color 0.3s;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: #0057b315;
-  
-}
-
-
-
-.slides {
-  height: 110vh;
-  width: 100%;
-  background: #fff;
-  overflow: hidden;
-
-}
-.is-sliding .slides {
-  background: #ededed;
-  transition: background 0.3s cubic-bezier(0.99, 1, 0.92, 1);
-}
-.slide {
-margin-bottom: 6rem;
-
-}
-.slide.is-active {
-  z-index: 19;
-  transition: z-index 1s ease;
-}
-.slide__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
-  /* position: relative; */
-  width: 95%;
-  top: 5%;
-  
-}
-.slide__header {
-  z-index: 10;
- height: 100%;
- margin-top: 25rem;
- margin-bottom: 10rem;
-
-
-}
-
-
-.slide__figure {
-  z-index: 7;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-.is-sliding .slide__figure {
-  transform: scale(0.8);
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-.slide__img {
- 
-    
-  box-shadow:  0px 6px 15px 1px  rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-
-  display: block;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 50%;
-  -webkit-backface-visibility: hidden;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  opacity: 0.5;
-  z-index: -9;
-  filter: grayscale(0%);
-  transition: height 1s 1.4s cubic-bezier(0.19, 1, 0.22, 1), filter 0.4s 0.1s ease;
-}
-
-
-@media (min-width: 54em) {
-  .slide__content {
-    height: 100%;
-    width: 80%;
-    top: 20%;
-    
-  }
-  
-
-}
-
-@media (min-width: 54em) {
-  .slide__header {
-    transform: translateX(-5%);
-    
-  }
-}
-
-@media (min-width: 54em) {
-  .slide__title {
-    font-size: 7em;
-  }
-
-}
-
-
-@media screen and (max-width: 768px) {
-  .slide__description {
-      font-size: 0.9rem; /* Slightly smaller font for mobile devices */
-     ; /* Adjust padding for smaller screens */
-     padding-bottom: 0;
-     line-height: 1.7rem;
-  }
-
-
-  .btn{
-
-    margin-left: 0.8rem;
-  }
-  .slides {
-    height: 110vh;
-    
-  }
-  
-  .slide__header {
-   margin-top: 15rem;
-   margin-bottom: 10rem;
-  
-  }
-
-  .slide__image{
-    height: 110vh;
-  }
-
-  .title-line{
-    /* font-size: 3.5vw; */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .slide__description {
-      font-size: 0.8rem; /* Further reduce font size for very small devices */
-      line-height: 1.4; /* Adjust line height for smaller screens */
-      padding-bottom: 5%;
-      line-height: 1.4rem;
-  }
-}
-
-.pb-10 {
-  margin-left: 2rem;
-}
-  
-  /* HEADINGS */
-  
-  h1{
-    color: #060505;
-    text-align: center;
-    line-height: 1.4;
-  }
-  h2{
-    color: #c9c3c3;
-  }
-
-  h2 {
-    color: #528588;
-    font-size: 1.3rem;
-    text-align: center;
-    line-height: 1.4;
-    margin-bottom: 10px;
-  }
 
 
 
@@ -1359,5 +1107,16 @@ margin-bottom: 6rem;
   
   }
 
-  
  
+
+
+  .chartdiv {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  #chartdiv {
+    width: 100%;
+    height: 80vh;
+  }
+
+
