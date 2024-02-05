@@ -2,8 +2,6 @@
 
 
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
   const universityCards = document.querySelectorAll('.university-card');
   
@@ -164,6 +162,9 @@ win.scroll(function(event) {
     }
   });
 });
+
+
+
 
 
 
