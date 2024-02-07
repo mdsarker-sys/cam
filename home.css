@@ -300,7 +300,9 @@
       z-index: 6;
     }
     
- 
+    .mobile-nav {
+    transform: translate(0%)!important;
+  }
     
     /* SECTIONS */
     

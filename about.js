@@ -1,3 +1,5 @@
+
+
 const SELECTORS = {
   section: '[data-section]',
   scrollTo: '[data-scroll-to]',
@@ -51,7 +53,11 @@ scrollToElements.forEach(el => {
 
 
 
-$('.menu-toggle').click(function(){
-  $(".nav").toggleClass("mobile-nav");
-  $(this).toggleClass("is-active");
+$(document).ready(function() {
+    $('.menu-toggle').click(function() {
+        $(".nav").toggleClass("mobile-nav");
+        $(this).toggleClass("is-active");
+        $('body').toggleClass('navv');
+    });
 });
+
