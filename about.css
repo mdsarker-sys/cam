@@ -455,7 +455,7 @@ button:focus {
 
 .menu-toggle {
   justify-self: end;
-  margin-right: 25px;
+ 
   display: none;
 }
 
@@ -566,7 +566,7 @@ button:focus {
   }
   
   .mobile-nav {
-  transform: translate(0%)!important;
+  transform: translate(0%);
 }
   
   /* SECTIONS */
