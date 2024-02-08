@@ -55,6 +55,11 @@
       padding-right: 15px;
       overflow: hidden;
       margin-top: 50px;
+
+      #hero {
+        z-index: 1; /* Lower z-index than the mobile menu */
+        /* Other styles... */
+      }
     }
     .upk-salf-slider-wrapper {
       display: flex;
@@ -474,18 +479,7 @@
     
   
   
-  
-  
-  
-  
-    
-  
-  
-  }
-  
-  
-  
-  
+
   
     .headline {
       width: 100%;
