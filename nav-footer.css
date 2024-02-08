@@ -22,7 +22,7 @@
   }
   
   /* NAVIGATION */
-  
+                  
   .navbar {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -47,7 +47,8 @@
     display: flex;
     grid-template-columns: repeat(6,1fr);
     justify-self: end;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
   }
   
   .nav-item a {
@@ -80,10 +81,7 @@
     z-index: 10000; /* Very high value */
   }
   
-  #hero {
-    z-index: 1; /* Lower z-index than the mobile menu */
-    /* Other styles... */
-  }
+
   
   .slide__button-container {
     text-align: start;
@@ -93,41 +91,14 @@
   
   /* SEARCH FUNCTION */
   
-  #search-icon {
-    
-    font-size: 1rem;
-    margin-top: 3px;
-    margin-left: 30px;
-    transition: color 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-  }
+
   
   .smooth-transition{
     transition: opacity 0.5s ease-in-out;
     opacity: 1; 
   }
   
-  #search-icon, .navbar ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   
-  }
-  
-  
-  #search-icon:hover {
-    color: #3498db;
-    cursor: pointer;
-  }
-  
-  .search {
-    transform: translate(-2%);
-    -webkit-transform: translate(-2%);
-    transition: opacity 0.7s ease-in-out;
-    color: #3498db;
-    
-    
-  }
   
   .no-search {
     transform: translate(0);
@@ -135,29 +106,10 @@
     
   }
   
-  .search-input {
-    transform: translate(2%);
-    display: none;
-    opacity: 0;
-    z-index: -1;
+
   
-  }
   
-  .search-active {
-    opacity: 1;
-    border: none;
-    outline: none;
-    z-index: 0;
-    
-  }
-  
-  input {
-    border: 0;
-    border-left: 1px solid #ccc;
-    border-radius: 0; /* FOR SAFARI */
-    outline: 0;
-    padding: 5px;
-  }
+
   
   /* MOBILE MENU & ANIMATION */
   
@@ -173,7 +125,10 @@
   
   .menu-toggle {
     justify-self: end;
-    
+    z-index: 10;
+    position: fixed;
+    right: 0;
+    margin-right: 2rem;
     display: none;
   }
   
@@ -262,40 +217,10 @@
     }
     
     /* MOBILE NAVIGATION */
-       
-    .navbar ul {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      justify-content: start;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #fff;
-      width: 100%;
+   
+ 
      
-      transform: translate(-120%);
-      text-align: center;
-      overflow: hidden;
-    }
-    
-    .navbar li {
-      padding: 15px;
-    }
-    
-    .navbar li:first-child {
-      margin-top: 50px;
-    }
-    
-    .navbar li a {
-      font-size: 1rem;
-    }
-     
-    .menu-toggle, .bar {
-      display: block;
-      cursor: pointer;
-      z-index: 6;
-    }
+
     
     .mobile-nav {
     transform: translate(0%)!important;
@@ -350,19 +275,13 @@
 }
 
 .navbar img {
-  height: 50px;
+  height: 28px;
   width: auto;
   justify-self: start;
   margin-left: 20px;
 }
 
-.navbar ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6,1fr);
-  justify-self: end;
-  
-}
+
 
 .nav-item a {
   color: #000;
@@ -385,17 +304,14 @@
   width: 25px;
   height: 3px;
   background-color: #3f3f3f;
-  margin: 5px auto;
+  display: block;
+  cursor: pointer;
+  z-index: 6;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-.menu-toggle {
-  justify-self: end;
- 
-  display: none;
-}
 
 .menu-toggle:hover{
   cursor: pointer;
@@ -473,14 +389,17 @@
   /* MOBILE NAVIGATION */
      
   .navbar ul {
+  
     display: flex;
     flex-direction: column;
     position: fixed;
     justify-content: start;
-    top: 55px;
+    top: 0;
+    bottom: 0;
+    left: 0;
     background-color: #fff;
     width: 100%;
-    height: calc(100vh - 55px);
+    height: 100;
     transform: translate(-101%);
     text-align: center;
     overflow: hidden;
@@ -491,7 +410,7 @@
   }
   
   .navbar li:first-child {
-    margin-top: 50px;
+    margin-top: 90px;
   }
   
   .navbar li a {
@@ -507,25 +426,10 @@
   transform: translate(0%);
 }
   
-  /* SECTIONS */
-  
-
-  
-  /* SEARCH DISABLED ON MOBILE */
-  
-  #search-icon {
-    display: none;
-  }
-  
-  .search-input {
-  display: none;
- }
-  
 }
 
 
 
-  /*Footer
 
   /* Footer */
  footer {
