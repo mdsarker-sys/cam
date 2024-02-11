@@ -2,6 +2,11 @@
 
 
 
+*:hover{
+  text-decoration: none !important;
+  
+}
+
 #blog-highlights {
   background-color: #f9f9f9;
   padding: 10px;
@@ -699,19 +704,20 @@ ul {
   .main-header .app-icons {
     display: none;
   }
-  
+}
 
 @media (max-width: 750px) {
   .content {
     display: none;
   }
-  
+}
   
 @media (max-width: 750px) {
   .talk {
    height:300px;
   }
-  
+}
+
 @media (max-width: 650px) {
   .content-wrapper {
   max-width: fit-content;

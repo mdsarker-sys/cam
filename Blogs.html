@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cube.css">
   <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="nav-footer.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
  
   <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
@@ -72,34 +73,32 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<!-- Your HTML --><nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg custom-navbar">
-  <a class="navbar-brand" href="home.html" style="color: white;">Cambridge Lead</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Blogs.html">blog-highlights</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Funding.html">Funding</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="admissions.html">Admissions</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="ai2.html">About us</a>
-      </li>
-    </ul>
-
-  </div>
-</nav>
+<div class="page-wrapper">
+  <div class="nav-wrapper">
+   <div class="grad-bar"></div>
+   <nav class="navbar">
+    <a href="index.html">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cambridge_%282%29.svg/1024px-Cambridge_%282%29.svg.png"  alt="Company Logo">
+    </a>
+     <div class="menu-toggle" id="mobile-menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+     </div>
+     <ul class="nav no-search">
+       <li class="nav-item"><a href="index.html">Services</a></li>
+       <li class="nav-item"><a href="about.html">About</a></li>
+       <li class="nav-item"><a href="Blogs.html">Blogs</a></li>
+       <li class="nav-item"><a href="Contact.html">Contact Us</a></li>
+    
+       <!-- <i class="fas fa-search" id="search-icon"></i>
+       <input class="search-input" type="text" placeholder="Search.."> -->
+     </ul>
+    
+   </nav>
+    <div class="menu-toggle"></div>
+   </div>
+</div>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -144,7 +143,7 @@
                 </p>
               </div>
               <div>
-                <a href="#" class="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">Read More -></a
+                <a href="AI.html" class="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">Read More -></a
                   >
                 </div>
               </div>
@@ -226,6 +225,34 @@
           </div>
         </div>
       </section>
-    </body>    
+      <footer>
+        <div class="footer-container">
+             <div class="newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+                  <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                  </form>
+                </div>
+                <div class="quick-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Funding.html">funding</a></li>
+                    <li><a href="AI.html">Blog</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="attribution">
+         
+                Developed by <a href="https://britmarksolutions.com/" target="_blank">BritMarkSolutions</a>.
+              </div>
+            </div>
+            
+       </footer>
 
-  
+      <script src="about.js"></script>  
+
+  </body>
+  </html>
