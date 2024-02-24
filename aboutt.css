@@ -81,6 +81,8 @@
     font-family: "Rock Salt";
     font-size: 2.8rem;
     text-align: center;
+    overflow: hidden;
+    align-self: center;
   }
   
   .work {
