@@ -1,0 +1,293 @@
+/* COLOR */
+
+  /* =10px */
+
+  /* COLOR */
+
+
+/* =10px */
+
+  a, a:hover, a:active {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a {
+    position: relative;
+    display: block;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  ul, ul li {
+    list-style: none;
+  }
+  
+  .liner {
+    margin-bottom: 32px;
+    width: 140px;
+    height: 4px;
+    background-color: #2a2a2a;
+  }
+  
+  .remove-padding {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  section {
+    min-height: 640px;
+    padding-top: 80px;
+  }
+  section .title, section .description {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  section .title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-family: "Rock Salt";
+  }
+  section .description {
+    margin: 40px auto 0 auto;
+    line-height: 20px;
+    width: 80%;
+  }
+  
+  .home {
+    padding-top: -10;
+    width: 100%;
+    height: 80vh;
+    background-image: url("https://image.ibb.co/iDOwLv/RfWhmqI.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: #F1F1F3;
+  }
+
+ 
+
+  .home .banner-title img {
+    display: block;
+    margin: 40px auto 24px auto;
+    width: 80%;
+  }
+  .home .banner-description {
+    font-family: "Rock Salt";
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  
+  .work {
+    position: relative;
+    overflow: hidden;
+  }
+  .work .title {
+    color: #E8CCFF;
+  }
+  .work .work-img {
+    margin-top: 50px;
+  }
+  .work .work-img li {
+    margin-bottom: 30px;
+  }
+  .work .work-img li a {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .work .work-img li a img {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f3;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .work .work-img li a:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  .blog {
+    position: relative;
+    overflow: hidden;
+  }
+  .blog .pattern {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .blog .title {
+    margin-top: 60px;
+    color: #FFB5B6;
+  }
+  .blog .blog-img {
+    margin-top: 50px;
+  }
+  .blog .blog-img li {
+    margin-bottom: 30px;
+  }
+  .blog .blog-img li a {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .blog .blog-img li a img {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f3;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .blog .blog-img li a:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .blog .blog-img li .category {
+    margin-top: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #16a085;
+  }
+  .blog .blog-img li h2 {
+    color: #4a4a4a;
+  }
+  
+  .about {
+    min-height: 520px;
+    position: relative;
+  }
+  .about .pattern {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .about .title {
+    margin-top: 60px;
+    color: #B5F7C9;
+  }
+  .about .box {
+    display: block;
+    margin: 48px auto 0 auto;
+    width: 80%;
+    border: solid 2px #e5e5e5;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .about .box h1 {
+    color: #4a4a4a;
+  }
+  .about .box a {
+    padding: 15px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .about .box a .icon--ei-arrow-right {
+    fill: #4a4a4a;
+    position: absolute;
+    top: 12px;
+    margin-left: 12px;
+  }
+  .about .box a:hover {
+    color: #FFB5B6;
+  }
+  .about .box a:hover .icon--ei-arrow-right {
+    fill: #FFB5B6;
+  }
+  
+  .contact {
+    min-height: 300px;
+  }
+  .contact .container {
+    background-color: #FEE3C6;
+    padding: 0 50px 50px 50px;
+  }
+  .contact .container .box {
+    background-color: #fafafa;
+    text-align: center;
+  }
+  .contact .container .box a {
+    color: #2a2a2a;
+  }
+  .contact .container .box a:hover, .contact .container .box a:active {
+    color: #FFB5B6;
+  }
+  .contact .container .box .office, .contact .container .box .contact-info {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+  .contact .container .box .office .heading, .contact .container .box .contact-info .heading {
+    text-transform: uppercase;
+    color: #4a4a4a;
+  }
+  .contact .container .box .office .info, .contact .container .box .contact-info .info {
+    margin-top: 24px;
+  }
+  .contact .container .box .office .phone, .contact .container .box .contact-info .phone {
+    color: #2a2a2a;
+  }
+  .contact .container .box .brand img {
+    width: 100%;
+    margin: 16px auto;
+  }
+  .contact .container .box .brand p {
+    font-family: "Rock Salt";
+  }
+  .contact .container .box .brand .social-link {
+    margin-top: 30px;
+  }
+  .contact .container .box .brand .social-link .icon {
+    fill: #aaaaaa;
+  }
+  .contact .container .box .brand .social-link .icon:hover {
+    fill: #FFB5B6;
+  }
+  
+  footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  footer a {
+    display: inline-block;
+    color: #FFB5B6;
+  }
+  footer a:hover {
+    color: #E8CCFF;
+  }
+
+
+
+
+
+
+
+
+
+
+  .testimg{
+    width:15%;
+    height:20%;
+    border-radius: 50%;
+  }
+  .card{
+    box-shadow:10px 10px 26px -15px rgba(0, 0, 0, 0.75)
+  }
+  .card-body{
+    height:350px;
+  }
+  
