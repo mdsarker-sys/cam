@@ -118,6 +118,8 @@
   .blog {
     position: relative;
     overflow: hidden;
+  
+    min-height: auto;
   }
   .blog .pattern {
     width: 80px;
@@ -278,7 +280,10 @@
 
 
 
-
+  .bgcol{
+    background: grey;
+    height: 300px;
+  }
   .testimg{
     width:15%;
     height:20%;
