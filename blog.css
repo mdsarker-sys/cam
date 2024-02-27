@@ -54,14 +54,29 @@ This is the parent `<div>` that contains the menu and the content area.
 /*
 The content `<div>` is where all your content goes.
 */
+
+.flex-col{
+
+padding-left:2vw;
+padding-right: 2vw;
+
+justify-content: space-between;
+gap: 0rem;
+align-items: center;
+}
+
+
 .content {
     margin: 0 auto;
     padding: 0 2em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    text-align: justify;
 }
-
+.flex-row{
+    padding: 2vw;
+}
 .header {
      margin-top: 3rem;
      margin-bottom: 2rem;
@@ -95,8 +110,8 @@ The content `<div>` is where all your content goes.
 
 .content-subhead {
     margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #888;
+    font-weight: 400;
+    color: #1b1b1b;
 }
 
 
@@ -180,12 +195,15 @@ appears on the left side of the page.
 
 
     .flex{
-padding-left: 3em;
-padding-right: 3em;
+padding-left: 5vw;
+padding-right: 5vw;
 margin-bottom: 4rem;
     }
        
-
+.pr-4{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
 
    
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
@@ -257,7 +275,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+      
         left: 0;
     }
     #menu {
@@ -273,4 +291,20 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+
+   
+}
+
+@media(max-width: 720px){
+
+    .header h1 {
+        
+        font-weight: 300 !important;
+        color: #000;
+    }
+
+}
+
+.w-full{
+    
 }
