@@ -28,6 +28,7 @@
   <!-- CSS Links -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="Contact.css">
+  <link rel="stylesheet" href="nav-footer.css">
   
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
@@ -63,34 +64,33 @@
   
 
 
-<!-- Your HTML --><nav class="navbar navbar-expand-lg navbar-light custom-navbar-bg custom-navbar">
-  <a class="navbar-brand" href="home.html" style="color: white;">Cambridge Lead</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Blogs.html">blog-highlights</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Funding.html">Funding</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="admissions.html">Admissions</a>
-      </li>
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+     <div class="grad-bar"></div>
+     <nav class="navbar">
+      <a href="index.html">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Cambridge_%282%29.svg/1024px-Cambridge_%282%29.svg.png"  alt="Company Logo">
+      </a>
+       <div class="menu-toggle" id="mobile-menu">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+       </div>
+       <ul class="nav no-search">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+         <li class="nav-item"><a href="index.html">Services</a></li>
+         <li class="nav-item"><a href="about.html">About</a></li>
+         <li class="nav-item"><a href="Blogs.html">Blogs</a></li>
+       
       
-      <li class="nav-item">
-        <a class="nav-link" href="ai2.html">About us</a>
-      </li>
-    </ul>
-
+         <!-- <i class="fas fa-search" id="search-icon"></i>
+         <input class="search-input" type="text" placeholder="Search.."> -->
+       </ul>
+      
+     </nav>
+      <div class="menu-toggle"></div>
+     </div>
   </div>
-</nav>
 
 
  
@@ -102,45 +102,50 @@
     <p class="text-center text-gray-700 mb-6">Getting in touch with us is easy and we're always here to help...</p>
     <form id="contact-form" action="server.php" method="POST" class="max-w-md mx-auto">
       <div class="mb-4">
-        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Full Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        <label for="name" class="block text-gray-700 text-sm font-bold mb-2"></label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
       </div>
       <div class="mb-4">
-        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+        <label for="email" class="block text-gray-700 text-sm font-bold mb-2"></label>
         <input type="email" id="email" name="email" placeholder="Your Email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
       </div>
       <div class="mb-4">
-        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number:</label>
+        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2"></label>
         <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
       </div>
       <fieldset class="mb-4">
         <legend class="text-gray-700 text-sm font-bold mb-2">Preferred Contact Method:</legend>
         <div class="flex items-center mb-2">
-          <input type="radio" id="contactEmail" name="contactMethod" value="Email" class="mr-2">
           <label for="contactEmail" class="text-gray-700 text-sm">Email</label>
+            <input type="radio" id="contactEmail" name="contactMethod" value="Email" class="mr-2">
+          
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center mb-2">
+          <label for="contactPhone" class="text-gray-700 text-sm">Phone </label>
           <input type="radio" id="contactPhone" name="contactMethod" value="Phone" class="mr-2">
-          <label for="contactPhone" class="text-gray-700 text-sm">Phone</label>
+          
         </div>
       </fieldset>
       <fieldset class="mb-4">
         <legend class="text-gray-700 text-sm font-bold mb-2">Services Interested:</legend>
         <div class="flex items-center mb-2">
-          <input type="checkbox" id="service1" name="service1" value="english-tests" class="mr-2">
-          <label for="service1" class="text-gray-700 text-sm">English language Test</label>
+          <label for="service1" class="text-gray-700 text-sm">English language Test   </label>  
+           <input type="checkbox" id="service1" name="service1" value="english-tests" class="mr-2">
+        
         </div>
         <div class="flex items-center mb-2">
-          <input type="checkbox" id="service2" name="service2" value="University Admissions" class="mr-2">
-          <label for="service2" class="text-gray-700 text-sm">University Admissions</label>
+          <label for="service2" class="text-gray-700 text-sm">University Admissions </label>
+           <input type="checkbox" id="service2" name="service2" value="University Admissions" class="mr-2">
+         
         </div>
-        <div class="flex items-center">
-          <input type="checkbox" id="service3" name="service3" value="Graphic Design" class="mr-2">
-          <label for="service3" class="text-gray-700 text-sm">Funding Support</label>
+        <div class="flex items-center mb-2">
+          <label for="service3" class="text-gray-700 text-sm">Funding Support  </label>
+            <input type="checkbox" id="service3" name="service3" value="Graphic Design" class="mr-2">
+         
         </div>
       </fieldset>
       <div class="mb-6">
-        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+        <label for="message" class="block text-gray-700 text-sm font-bold mb-2"></label>
         <textarea id="message" name="message" placeholder="Your Message" rows="4" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"></textarea>
       </div>
       <div class="flex items-center justify-between">
@@ -155,7 +160,7 @@
 
 
 
-    <section id="locations">
+    <!-- <section id="locations">
       
       <div class="country-container">
         <div class="country-group uk">
@@ -177,33 +182,40 @@
         </div>
         <!-- ... other countries ... -->
       </div>
-    </section>
+    </section> -->
     
     
     <footer>
       <div class="footer-container">
-        <div class="newsletter">
-          <h3>Subscribe to Our Newsletter</h3>
-          <form id="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-        <div class="quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+           <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+                <form id="newsletter-form">
+                  <input type="email" placeholder="Enter your email" required>
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+              <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="Funding.html">funding</a></li>
+                  <li><a href="AI.html">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="attribution">
+       
+              Developed by <a href="https://britmarksolutions.com/" target="_blank">BritMarkSolutions</a>.
+            </div>
+          </div>
+          
+     </footer>
     
   </div>
     <script src="script.js"></script>
     <script src="server.js"></script>
+    <script src="about.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
