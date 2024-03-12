@@ -60,29 +60,18 @@
   font-size: smaller;
 }
 
-  input[type="checkbox"] {
-   
-    
-    width: auto !important; /* Adjust the width */
-    margin-left: 2rem !important;
-   
-  }
+
 
   input[type="radio"], .mb-2{
     display: flex;
     justify-content: space-between;
-   
-   
-      
+  
   }
 
 
-  input[type="radio"] {
-   
-    display: flex;
-    
+  input[type="radio"], input[type="checkbox"] {
+  
     width: auto !important; /* Adjust the width */
-    margin-left: 2rem !important;
   }
 
  
