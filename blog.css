@@ -1,7 +1,9 @@
 body {
     color: #777;
 }
-
+.navbar img {
+    width: auto !important;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -36,7 +38,7 @@ This is the parent `<div>` that contains the menu and the content area.
 #layout {
     display: flex;
     justify-content: center;
-    padding: 4rem !important;
+    padding: 10vw !important;
   
 }
     #layout.active {
@@ -54,25 +56,42 @@ This is the parent `<div>` that contains the menu and the content area.
 /*
 The content `<div>` is where all your content goes.
 */
+
+.flex-col{
+
+padding-left:15vw;
+padding-right: 15vw;
+
+justify-content: space-between;
+gap: 5vw;
+align-items: center;
+}
+
+
 .content {
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0 1em;
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 .header {
-     margin-top: 3rem;
+    margin-top: 1rem;
      margin-bottom: 2rem;
      color: #333;
      text-align: center;
-     padding: 2.5em 2em 0;
+    
      border-bottom: 1px solid #000000;
+ }
+
+ .article-meta{
+    margin-top: 0;
  }
     .header h1 {
         margin-bottom: 4rem;
-        font-size: 2.5em;
+        font-size: clamp(2rem, 8vw - 1rem, 2.5rem);
         font-weight: 300;
         color: #000;
     }
@@ -95,8 +114,8 @@ The content `<div>` is where all your content goes.
 
 .content-subhead {
     margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #888;
+    font-weight: 400;
+    color: #1b1b1b;
 }
 
 
@@ -180,14 +199,17 @@ appears on the left side of the page.
 
 
     .flex{
-padding-left: 3em;
-padding-right: 3em;
+
 margin-bottom: 4rem;
     }
        
+.pr-4{
+  padding-right: 0;
+}
 
-
-   
+   .card{
+    background-color: #eeeeee;
+   }
 /* -- Dynamic Button For Responsive Menu -------------------------------------*/
 
 /*
@@ -257,7 +279,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 
     #layout {
-        padding-left: 150px; /* left col width "#menu" */
+      
         left: 0;
     }
     #menu {
@@ -273,4 +295,20 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+
+   
+}
+
+@media(max-width: 720px){
+
+    .header h1 {
+        
+        font-weight: 300 !important;
+        color: #000;
+    }
+
+}
+
+.w-full{
+    
 }

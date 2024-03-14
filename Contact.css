@@ -4,21 +4,102 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
+   margin-top: 4vw;
+   margin-bottom: 4vw;
+   width: 80vw;
+   margin-left: auto;
+   margin-right: auto;
   }
-  
+  body{
+    margin: 0;
+  }
   /* Form headings */
-  #contact h2 {
-    font-size: 24px;
+  #contact h2{
+    font-size: 30px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-bottom: 3vw;
+  }
+  #contact p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .mr-2{
+    margin: 0 !important;
+  
+  }
+#name, #email, #phone{
+    height: 2.5rem;
+    border: none!important;
+    box-shadow: 2px 2px 4px 2px rgba(225, 225, 225, 0.2);
+
   }
   
+  #name:hover, #email:hover, #phone:hover{
+
+    box-shadow: 2px 2px 4px 2px rgba(159, 159, 159, 0.2);
+
+  }
+ input:focus{
+  
+  border: rgb(53, 38, 222) solid 1px !important;
+
+   
+  }
+.text-sm{
+  font-size: smaller;
+}
+
+
+
+  input[type="radio"], .mb-2{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+
+
+  input[type="radio"], input[type="checkbox"] {
+  
+    width: auto !important; /* Adjust the width */
+  }
+
+ 
+::placeholder{
+  font-size: 0.9rem;
+}
+  .mb-2{
+
+ width: 90%;
+ margin-bottom: 1rem;
+ font-size: 1rem;
+
+  }
+
+label{
+  color: #828282;
+  margin: 0 !important;
+}
+fieldset{
+  margin-top: 3vw;
+
+}
+
   /* Input fields */
   #contact-form input,
   #contact-form textarea {
     width: 100%;
     padding: 15px;
-    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -43,7 +124,7 @@
   
   /* Hover effect for the button */
   #contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #09417c;
   }
   
 
