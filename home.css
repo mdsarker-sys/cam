@@ -962,7 +962,7 @@ align-items: flex-start;
 
 .div-40 {
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 80px;
 }
 @media (max-width: 991px) {
   .div-40 {
@@ -1156,7 +1156,7 @@ align-items: flex-start;
 .div-200 {
   justify-content: space-between;
   background-color: var(--Neutral-Silver, #f5f7fa);
-  padding: 45px 80px;
+  padding: 70px;
 }
 @media (max-width: 991px) {
   .div-200 {
@@ -1368,7 +1368,7 @@ align-items: flex-start;
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 80px;
+  padding: 50px;
 }
 @media (max-width: 991px) {
   .div-230 {
